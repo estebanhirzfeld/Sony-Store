@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sony Store - Product Detail</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/592dce0dd2.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="../styles/style.css" />
+  </head>
+  <body>
+    <!-- Mobile Nav -->
+    <div
+      id="mobile-nav"
+      class="d-none col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-grey-200 text-light position-fixed w-100 z-10 m-0 p-0"
+    >
+      <a href="#">
+        <div class="close">
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+      </a>
+      <div
+        class="d-flex flex-column align-items-center justify-content-start pt-5 px-3 pt-2 text-white min-vh-100 fixed-md"
+      >
+        <a href="../index.html">
+          <img
+            class="h-40px mb-3 mt-1"
+            src="../img/sony-logo.webp"
+            alt="Sony Logo White"
+          />
+        </a>
+        <ul class="nav nav-pills flex-column mb-4 align-items-start" id="menu">
+          <li class="text-secondary">
+            <a href="#" class="align-middle px-0">
+              <i class="fa-regular fa-user" aria-hidden="true"></i
+              ><span class="ms-2 d-sm-inline align-bottom">Profile</span>
+            </a>
+          </li>
+          <li class="text-secondary">
+            <a href="#" class="px-0 align-middle">
+              <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+              <span class="ms-1 d-sm-inline align-bottom">Search</span>
+            </a>
+          </li>
+          <li class="text-secondary">
+            <a href="#" class="px-0 align-middle">
+              <i class="fa-regular fa-heart" aria-hidden="true"></i>
+              <span class="ms-1 d-sm-inline align-bottom">Favorite</span>
+            </a>
+          </li>
+          <li class="text-secondary">
+            <a href="./checkout.html" class="px-0 align-middle">
+              <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+              <span class="ms-1 d-sm-inline align-bottom">Cart</span>
+            </a>
+          </li>
+          <li class="text-secondary">
+            <a href="../pages/contact.html" class="px-0 align-middle">
+              <i class="fa-regular fa-envelope"></i>
+              <span class="ms-1 d-sm-inline align-bottom">Contact</span>
+            </a>
+          </li>
+        </ul>
+        <span class="fs-5 d-sm-inline mb-3 text-uppercase fw-bolder"
+          >Category</span
+        >
+        <ul class="nav nav-pills flex-column mb-0 align-items-start" id="menu">
+          <li class="text-secondary">
+            <a href="#" class="align-middle px-0">
+              <i class="fa-solid fa-tv" aria-hidden="true"></i>
+              <span class="ms-1 d-sm-inline align-bottom">Televisions</span>
+            </a>
+          </li>
+          <li class="text-secondary">
+            <a href="#" class="px-0 align-middle">
+              <i class="fa-solid fa-headphones" aria-hidden="true"></i>
+              <span class="ms-2 d-sm-inline align-bottom">Headphones</span>
+            </a>
+          </li>
+          <li class="text-secondary">
+            <a href="#" class="px-0 align-middle">
+              <i class="fa-solid fa-gamepad" aria-hidden="true"></i>
+              <span class="ms-1 d-sm-inline align-bottom">Consoles</span>
+            </a>
+          </li>
+          <li class="text-secondary">
+            <a href="#" class="px-0 align-middle">
+              <i class="fa-solid fa-camera" aria-hidden="true"></i>
+              <span class="ms-2 d-sm-inline align-bottom">Cameras</span>
+            </a>
+          </li>
+          <li class="text-secondary">
+            <a href="#" class="px-0 align-middle">
+              <i class="fa-solid fa-radio" aria-hidden="true"></i>
+              <span class="ms-2 d-sm-inline align-bottom">Speakers</span>
+            </a>
+          </li>
+          <li class="text-secondary">
+            <a href="#" class="px-0 align-middle">
+              <i class="fa-solid fa-ear-listen" aria-hidden="true"></i>
+              <span class="ms-2 d-sm-inline align-bottom">Home Theatre</span>
+            </a>
+          </li>
+          <li class="text-secondary">
+            <a href="#" class="px-0 align-middle">
+              <i class="fa-solid fa-car" aria-hidden="true"></i>
+              <span class="ms-2 d-sm-inline align-bottom">Car Audio</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- End Mobile Nav -->
+    <!-- Mobile Header -->
+    <header
+      class="mobile-header row align-items-center justify-content-between h-60px mb-4 bg-grey-300 p-0 m-0 z-10 w-100"
+    >
+      <a href="#mobile-nav" class="d-contents p-0 m-0">
+        <div class="p-0 m-0 ms-3">
+          <i class="col-4 fa-2xl fa-solid fa-bars"></i>
+        </div>
+      </a>
+      <div class="col-8 h-100">
+        <a href="../index.html" class="d-contents">
+
+          <img class="h-100 fit-contain" src="../img/sony-logo.webp" alt="" />
+        </a>
+      </div>
+    </header>
+    <!-- End Mobile Header -->
+    <aside class="container-fluid">
+      <div class="row flex-nowrap">
+        <div
+          class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 d-none d-sm-block bg-grey-200 text-light"
+        >
+          <div
+            class="ps-5 d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100 fixed-md"
+          >
+            <a href="../index.html">
+              <img
+                class="h-40px mb-3 mt-1"
+                src="../img/sony-logo.webp"
+                alt="Sony Logo White"
+              />
+            </a>
+            <ul
+              class="nav nav-pills flex-column mb-4 align-items-center align-items-sm-start"
+              id="menu"
+            >
+              <li class="text-secondary">
+                <a href="#" class="align-middle px-0">
+                  <i class="fa-regular fa-user"></i
+                  ><span class="ms-2 d-none d-sm-inline align-bottom"
+                    >Profile</span
+                  >
+                </a>
+              </li>
+              <li class="text-secondary">
+                <a href="#" class="px-0 align-middle">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                  <span class="ms-1 d-none d-sm-inline align-bottom"
+                    >Search</span
+                  ></a
+                >
+              </li>
+              <li class="text-secondary">
+                <a href="#" class="px-0 align-middle">
+                  <i class="fa-regular fa-heart"></i>
+                  <span class="ms-1 d-none d-sm-inline align-bottom"
+                    >Favorite</span
+                  ></a
+                >
+              </li>
+              <li class="text-secondary">
+                <a href="./checkout.html" class="px-0 align-middle">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                  <span class="ms-1 d-none d-sm-inline align-bottom"
+                    >Cart</span
+                  ></a
+                >
+              </li>
+              <li class="text-secondary">
+                <a href="../pages/contact.html" class="px-0 align-middle">
+                  <i class="fa-regular fa-envelope"></i>
+                  <span class="ms-1 d-sm-inline align-bottom">Contact</span>
+                </a>
+              </li>
+            </ul>
+            <span class="fs-5 d-none d-sm-inline mb-3 text-uppercase fw-bolder"
+              >Category</span
+            >
+            <ul
+              class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start"
+              id="menu"
+            >
+              <li class="text-secondary">
+                <a href="#" class="align-middle px-0">
+                  <i class="fa-solid fa-tv"></i>
+                  <span class="ms-1 d-none d-sm-inline align-bottom"
+                    >Televisions</span
+                  >
+                </a>
+              </li>
+              <li class="text-secondary">
+                <a href="#" class="px-0 align-middle">
+                  <i class="fa-solid fa-headphones"></i>
+                  <span class="ms-2 d-none d-sm-inline align-bottom"
+                    >Headphones</span
+                  ></a
+                >
+              </li>
+              <li class="text-secondary">
+                <a href="#" class="px-0 align-middle">
+                  <i class="fa-solid fa-gamepad"></i>
+                  <span class="ms-1 d-none d-sm-inline align-bottom"
+                    >Consoles</span
+                  ></a
+                >
+              </li>
+              <li class="text-secondary">
+                <a href="#" class="px-0 align-middle">
+                  <i class="fa-solid fa-camera"></i>
+                  <span class="ms-2 d-none d-sm-inline align-bottom"
+                    >Cameras</span
+                  ></a
+                >
+              </li>
+              <li class="text-secondary">
+                <a href="#" class="px-0 align-middle">
+                  <i class="fa-solid fa-radio"></i>
+                  <span class="ms-2 d-none d-sm-inline align-bottom"
+                    >Speakers</span
+                  ></a
+                >
+              </li>
+              <li class="text-secondary">
+                <a href="#" class="px-0 align-middle">
+                  <i class="fa-solid fa-ear-listen"></i>
+                  <span class="ms-2 d-none d-sm-inline align-bottom"
+                    >Home Theatre</span
+                  ></a
+                >
+              </li>
+              <li class="text-secondary">
+                <a href="#" class="px-0 align-middle">
+                  <i class="fa-solid fa-car"></i>
+                  <span class="ms-2 d-none d-sm-inline align-bottom"
+                    >Car Audio</span
+                  ></a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- Main -->
+        <main class="col p-3 z-4">
+          <!-- Header -->
+          <header class="d-flex justify-content-between h-60px mb-3">
+            <form action="#" method="get">
+              <input
+                type="text"
+                placeholder="🔎︎ Search products by name, code or category..."
+                class="px-3"
+                id="searchInput"
+                  name="searchQuery"
+              />
+            </form>
+            <div
+              class="d-flex justify-content-around align-items-center gap-3 py-2"
+            >
+              <span>User</span>
+              <img
+                class="rounded-circle h-100"
+                src="https://res.cloudinary.com/dtnk8oggj/image/upload/v1721083530/boom-recorder/placeholders/v3der7jjr4ljprscr9dj.png"
+                alt="Profile Photo"
+              />
+            </div>
+          </header>
+          <section class="container-fluid">
+            <section class="row justify-content-center align-items-stretch">
+              <article class="d-none d-lg-block col-lg-3 detail-card">
+                <figure>
+                  <img
+                    class="w-100 aspect-square fit-contain"
+                    src="../img/sony-ps5.webp"
+                    alt="PS5"
+                  />
+                  <figcaption class="text-center">PS5</figcaption>
+                </figure>
+                <div class="row mt-5">
+                  <img
+                    class="col-3 aspect-square fit-cover p-1"
+                    src="../img/sony-joystick-ps5-1.webp"
+                    alt="sony-joystick-ps5-1"
+                  />
+                  <img
+                    class="col-3 aspect-square fit-cover p-1"
+                    src="../img/sony-joystick-ps5-2.webp"
+                    alt="sony-joystick-ps5-2"
+                  />
+                  <img
+                    class="col-3 aspect-square fit-cover p-1"
+                    src="../img/sony-joystick-ps5-3.webp"
+                    alt="sony-joystick-ps5-3"
+                  />
+                  <img
+                    class="col-3 aspect-square fit-cover p-1"
+                    src="../img/sony-joystick-ps5-4.webp"
+                    alt="sony-joystick-ps5-4"
+                  />
+                  <img
+                    class="col-3 aspect-square fit-cover p-1"
+                    src="../img/sony-joystick-ps5-5.webp"
+                    alt="sony-joystick-ps5-5"
+                  />
+                </div>
+              </article>
+              <article class="col-lg-6">
+                <!-- Carrousel on Mobile -->
+                <div
+                  id="carouselExampleIndicators"
+                  class="d-lg-none d-block carousel slide"
+                  data-bs-ride="carousel"
+                >
+                  <div class="carousel-indicators">
+                    <button
+                      type="button"
+                      data-bs-target="#carouselExampleIndicators"
+                      data-bs-slide-to="0"
+                      class="active"
+                      aria-current="true"
+                      aria-label="Slide 1"
+                    ></button>
+                    <button
+                      type="button"
+                      data-bs-target="#carouselExampleIndicators"
+                      data-bs-slide-to="1"
+                      aria-label="Slide 2"
+                    ></button>
+                    <button
+                      type="button"
+                      data-bs-target="#carouselExampleIndicators"
+                      data-bs-slide-to="2"
+                      aria-label="Slide 3"
+                    ></button>
+                    <button
+                      type="button"
+                      data-bs-target="#carouselExampleIndicators"
+                      data-bs-slide-to="3"
+                      aria-label="Slide 4"
+                    ></button>
+                    <button
+                      type="button"
+                      data-bs-target="#carouselExampleIndicators"
+                      data-bs-slide-to="4"
+                      aria-label="Slide 5"
+                    ></button>
+                  </div>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="../img/sony-joystick-ps5-1.webp" class="d-block
+                      w-100 h-100 fit-contain aspect-square alt="Image 1" />
+                    </div>
+                    <div class="carousel-item">
+                      <img src="../img/sony-joystick-ps5-2.webp" class="d-block
+                      w-100 h-100 fit-contain aspect-square alt="Image 2" />
+                    </div>
+                    <div class="carousel-item">
+                      <img src="../img/sony-joystick-ps5-3.webp" class="d-block
+                      w-100 h-100 fit-contain aspect-square alt="Image 3" />
+                    </div>
+                    <div class="carousel-item">
+                      <img src="../img/sony-joystick-ps5-4.webp" class="d-block
+                      w-100 h-100 fit-contain aspect-square alt="Image 4" />
+                    </div>
+                    <div class="carousel-item">
+                      <img src="../img/sony-joystick-ps5-5.webp" class="d-block
+                      w-100 h-100 fit-contain aspect-square alt="Image 5" />
+                    </div>
+                  </div>
+                  <button
+                    class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev"
+                  >
+                    <span
+                      class="carousel-control-prev-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button
+                    class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next"
+                  >
+                    <span
+                      class="carousel-control-next-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+
+                <figure class="bg-grey-300 p-3 d-none d-lg-block">
+                  <img
+                    class="w-100"
+                    src="../img/sony-joystick-ps5.webp"
+                    alt="PS5 Dualsense Wireless Control"
+                  />
+                  <figcaption class="text-secondary fw-bolder">
+                    Playstation Accesories
+                  </figcaption>
+                </figure>
+                <h1 class="text-uppercase my-4">
+                  PS5 Dualsense Wireless Control
+                </h1>
+                <section class="my-3">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star text-secondary"></i>
+                </section>
+                <section class="row justify-content-between align-items-start">
+                  <p class="col-4 display-6 fw-bolder">$150.00</p>
+                  <div class="col-8 row align-items-center">
+                    <a href="./checkout.html" class="d-contents">
+                      <div
+                        class="col-8 bg-pill rounded-pill p-1 px-3 text-center"
+                      >
+                        Order Now
+                      </div>
+                    </a>
+                    <div class="col-4">
+                      <i
+                        class="fa-regular fa-2xl fa-heart"
+                        aria-hidden="true"
+                      ></i>
+                    </div>
+                  </div>
+                </section>
+              </article>
+              <article class="row col-12 col-lg-3 p-0 m-0">
+                <div class="mb-2 col-4 col-lg-12 m-0 p-1">
+                  <figure
+                    class="bg-grey-100 aspect-square m-0 d-flex flex-column justify-content-center align-items-center rounded h-150px w-100 product-color"
+                  >
+                    <img
+                      class="w-100 fit-contain h-75"
+                      src="../img/sony-joystick-red.png"
+                      alt="PS5 Joystick Color Red"
+                    />
+                    <figcaption class="text-center">Color: RED</figcaption>
+                  </figure>
+                </div>
+                <div class="mb-2 col-4 col-lg-12 m-0 p-1">
+                  <figure
+                    class="bg-grey-100 aspect-square m-0 d-flex flex-column justify-content-center align-items-center rounded h-150px w-100 product-color"
+                  >
+                    <img
+                      class="w-100 fit-contain h-75"
+                      src="../img/sony-joystick-black.png"
+                      alt="PS5 Joystick Color Black"
+                    />
+                    <figcaption class="text-center">Color: BLACK</figcaption>
+                  </figure>
+                </div>
+                <div class="mb-2 col-4 col-lg-12 m-0 p-1">
+                  <figure
+                    class="bg-grey-100 aspect-square m-0 d-flex flex-column justify-content-center align-items-center rounded h-150px w-100 product-color"
+                  >
+                    <img
+                      class="w-100 fit-contain h-75"
+                      src="../img/sony-joystick-purple.png"
+                      alt="PS5 Joystick Color Purple"
+                    />
+                    <figcaption class="text-center">Color: PURPLE</figcaption>
+                  </figure>
+                </div>
+              </article>
+            </section>
+          </section>
+          <section>
+            <h2 class="mb-4 mt-5">Product Description</h2>
+            <section class="row">
+              <article class="col-12 col-md-6">
+                <iframe
+                  class="w-100 aspect-video"
+                  src="https://www.youtube.com/embed/RkC0l4iekYo?si=O9u0g5yQ7rpeTd1U"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                ></iframe>
+              </article>
+              <article class="col-12 col-md-6">
+                <h3>Dualsense Wireless Control</h3>
+                <p class="text-secondary">Playstation 5 - Play Has No Limits</p>
+                <p class="fw-light">
+                  Discover a deeper, more immersive gaming experience* that
+                  brings the action to life in the palms of your hands. The
+                  Dualsense wireless controller offer immersive haptic
+                  feedback**, dynamic adaptive triggers** and a built-in
+                  microphone, all integrated into an iconic and comfortable
+                  design.
+                </p>
+                <p class="text-orange fw-bolder">
+                  USB charging cable not included
+                </p>
+              </article>
+            </section>
+          </section>
+          <section>
+            <h2 class="mb-4 mt-5">Reviews</h2>
+            <section class="row">
+              <article class="col-12 col-md-6">
+                <div class="container mt-5">
+                  <div class="row mb-2">
+                    <div class="col-md-2">
+                      <span class="review-label color-light">5 Stars</span>
+                    </div>
+                    <div class="col-md-10">
+                      <div class="review-bar rounded-pill bg-light">
+                        <div class="h-100 bg-grey rounded-pill w-75"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row mb-2">
+                    <div class="col-md-2">
+                      <span class="review-label color-light">4 Stars</span>
+                    </div>
+                    <div class="col-md-10">
+                      <div class="review-bar rounded-pill bg-light">
+                        <div class="h-100 bg-grey rounded-pill w-50"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row mb-2">
+                    <div class="col-md-2">
+                      <span class="review-label color-light">3 Stars</span>
+                    </div>
+                    <div class="col-md-10">
+                      <div class="review-bar rounded-pill bg-light">
+                        <div class="h-100 bg-grey rounded-pill w-25"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row mb-2">
+                    <div class="col-md-2">
+                      <span class="review-label color-light">2 Stars</span>
+                    </div>
+                    <div class="col-md-10">
+                      <div class="review-bar rounded-pill bg-light">
+                        <div class="h-100 bg-grey rounded-pill w-10"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row mb-2">
+                    <div class="col-md-2">
+                      <span class="review-label color-light">1 Star</span>
+                    </div>
+                    <div class="col-md-10">
+                      <div class="review-bar rounded-pill bg-light">
+                        <div class="h-100 bg-grey rounded-pill w-5"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <article
+                class="col-12 col-md-3 mt-3 bg-grey-100 p-3 rounded px-4"
+              >
+                <p class="fw-bolder">General Reviews</p>
+                <span class="d-inline-block display-6 fw-bolder align-top"
+                  >4.5</span
+                >
+                <div class="d-inline-block ms-2">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <p class="fw-light text-small align-bottom text-secondary">
+                    432 Reviews
+                  </p>
+                </div>
+                <p class="fw-light">
+                  398 out of 423 (88%) reviews recommend this product
+                </p>
+              </article>
+              <article class="col-12 col-md-3 mt-3">
+                <p class="fw-bolder">Review a product</p>
+                <div class="d-flex gap-2">
+                  <span class="cursor-pointer bg-light p-2 rounded text-center"
+                    ><i class="text-dark fa-xl fa-regular fa-star"></i
+                  ></span>
+                  <span class="cursor-pointer bg-light p-2 rounded text-center"
+                    ><i class="text-dark fa-xl fa-regular fa-star"></i
+                  ></span>
+                  <span class="cursor-pointer bg-light p-2 rounded text-center"
+                    ><i class="text-dark fa-xl fa-regular fa-star"></i
+                  ></span>
+                  <span class="cursor-pointer bg-light p-2 rounded text-center"
+                    ><i class="text-dark fa-xl fa-regular fa-star"></i
+                  ></span>
+                  <span class="cursor-pointer bg-light p-2 rounded text-center"
+                    ><i class="text-dark fa-xl fa-regular fa-star"></i
+                  ></span>
+                </div>
+                <p class="fw-light mt-2">
+                  To add a review, a valid email address is required for
+                  verification purposes.
+                </p>
+              </article>
+            </section>
+          </section>
+          <!-- Products -->
+          <section class="row">
+            <h2 class="text-center mb-4 mt-5">Related Products</h2>
+            <article class="col-6 col-md-4 col-lg-3 text-center p-1">
+              <div class="p-1 bg-grey-100 h-100">
+                <a href="./product-detail.html">
+                  <figure class="product-card">
+                    <img
+                      class="w-100 aspect-square fit-contain"
+                      src="../img/sony-headphones-inzone-h7.jpg"
+                      alt="INZONE H7 Wireless Noise Cancelling Headphones"
+                    />
+                    <figcaption>
+                      INZONE H7 Wireless Noise Cancelling Headphones
+                    </figcaption>
+                  </figure>
+                </a>
+                <p class="text-secondary fw-bolder text-uppercase">
+                  HEADPHONES
+                </p>
+              </div>
+            </article>
+            <article class="col-6 col-md-4 col-lg-3 text-center p-1">
+              <div class="p-1 bg-grey-100 h-100">
+                <a href="./product-detail.html">
+                  <figure class="product-card">
+                    <img
+                      class="w-100 aspect-square fit-contain"
+                      src="../img/sony-ps5-vr-2.webp"
+                      alt="PlayStation® VR2"
+                    />
+                    <figcaption>PlayStation® VR2</figcaption>
+                  </figure>
+                </a>
+                <p class="text-secondary fw-bolder text-uppercase">
+                  Playstation Accessories
+                </p>
+              </div>
+            </article>
+            <article class="col-6 col-md-4 col-lg-3 text-center p-1">
+              <div class="p-1 bg-grey-100 h-100">
+                <a href="./product-detail.html">
+                  <figure class="product-card">
+                    <img
+                      class="w-100 aspect-square fit-contain"
+                      src="../img/sony-ps-move.webp"
+                      alt="PlayStation Move | motion controls"
+                    />
+                    <figcaption>PlayStation Move | motion controls</figcaption>
+                  </figure>
+                </a>
+                <p class="text-secondary fw-bolder text-uppercase">
+                  Playstation Accessories
+                </p>
+              </div>
+            </article>
+            <article class="col-6 col-md-4 col-lg-3 text-center p-1">
+              <div class="p-1 bg-grey-100 h-100">
+                <a href="./product-detail.html">
+                  <figure class="product-card">
+                    <img
+                      class="w-100 aspect-square fit-contain"
+                      src="../img/sony-joystick-silver.png"
+                      alt="Wireless DUALSHOCK®4 Silver Controller"
+                    />
+                    <figcaption>
+                      Wireless DUALSHOCK®4 Silver Controller
+                    </figcaption>
+                  </figure>
+                </a>
+                <p class="text-secondary fw-bolder text-uppercase">
+                  Playstation Accessories
+                </p>
+              </div>
+            </article>
+            <article class="col-6 col-md-4 col-lg-3 text-center p-1">
+              <div class="p-1 bg-grey-100 h-100">
+                <a href="./product-detail.html">
+                  <figure class="product-card">
+                    <img
+                      class="w-100 aspect-square fit-contain"
+                      src="../img/sony-ps5-camera.webp"
+                      alt="Sony Playstation 5 Camera Original HD 1080p 1080p PS5"
+                    />
+                    <figcaption>
+                      Sony Playstation 5 Camera Original HD 1080p 1080p PS5
+                    </figcaption>
+                  </figure>
+                </a>
+                <p class="text-secondary fw-bolder text-uppercase">
+                  Playstation Accessories
+                </p>
+              </div>
+            </article>
+            <article class="col-6 col-md-4 col-lg-3 text-center p-1">
+              <div class="p-1 bg-grey-100 h-100">
+                <a href="./product-detail.html">
+                  <figure class="product-card">
+                    <img
+                      class="w-100 aspect-square fit-contain"
+                      src="../img/sony-joystick-edge.webp"
+                      alt="PS5 Dualsense EDGE ZCP1 Case"
+                    />
+                    <figcaption>PS5 Dualsense EDGE ZCP1 Case</figcaption>
+                  </figure>
+                </a>
+                <p class="text-secondary fw-bolder text-uppercase">
+                  Playstation Accessoriesson
+                </p>
+              </div>
+            </article>
+            <article class="col-6 col-md-4 col-lg-3 text-center p-1">
+              <div class="p-1 bg-grey-100 h-100">
+                <a href="./product-detail.html">
+                  <figure class="product-card">
+                    <img
+                      class="w-100 aspect-square fit-contain"
+                      src="../img/sony-ps5.webp"
+                      alt="Standard Console PlayStation®5"
+                    />
+                    <figcaption>Standard Console PlayStation®5</figcaption>
+                  </figure>
+                </a>
+                <p class="text-secondary fw-bolder text-uppercase">CONSOLES</p>
+              </div>
+            </article>
+            <article class="col-6 col-md-4 col-lg-3 text-center p-1">
+              <div class="p-1 bg-grey-100 h-100">
+                <a href="./product-detail.html">
+                  <figure class="product-card">
+                    <img
+                      class="w-100 aspect-square fit-contain"
+                      src="../img/sony-home-theatre.png"
+                      alt="5.1-channel home theater with wireless rear speakers |
+                      HT-S40R"
+                    />
+                    <figcaption>
+                      5.1-channel home theater with wireless rear speakers |
+                      HT-S40R
+                    </figcaption>
+                  </figure>
+                </a>
+                <p class="text-secondary fw-bolder text-uppercase">
+                  HOME THEATRE
+                </p>
+              </div>
+            </article>
+          </section>
+        </main>
+      </div>
+    </aside>
+
+    <footer
+      class="container-fluid w-100 text-center py-5 bg-grey-300 z-4 position-relative"
+    >
+      <section class="row justify-content-center align-items-start w-100">
+        <article class="col-6 col-lg-2 text-start">
+          <ul>
+            <li>Find a Distributor</li>
+            <li class="">
+              <form action="#" method="get" ="" class="row my-2 px-2">
+                <input
+                  class="col-7 border-0"
+                  placeholder="📍 Search..."
+                  type="text"
+                  id="searchInput"
+                  name="searchQuery"
+                />
+                <input
+                  class="col-5 bg-grey-100 border-0 text-center"
+                  type="submit"
+                  value="Search"
+                  id="searchSubmit"
+                  name="searchSubmit"
+                />
+              </form>
+            </li>
+            <li class="text-secondary my-2">Retailers and Distributors</li>
+            <li class="my-2">
+              <div class="p-3 bg-grey-100">
+                <img
+                  class="d-inline-block h-20px"
+                  src="../img/arg-flag.svg"
+                  alt="Argentina Flag"
+                />
+                <span class="d-inline-block">Argentina</span>
+              </div>
+            </li>
+          </ul>
+        </article>
+        <article class="col-6 col-lg-2 text-start">
+          <ul>
+            <li>Online Shopping</li>
+            <li class="text-secondary">Help Center</li>
+            <li class="text-secondary">Returns and Exchanges</li>
+            <li class="text-secondary">Consumer Protection</li>
+            <li class="text-secondary">Bank Promotions</li>
+            <li class="text-secondary">Suport and Warranty</li>
+            <li class="text-secondary">Online Store</li>
+          </ul>
+        </article>
+        <article class="col-6 col-lg-2 text-start">
+          <ul>
+            <li>Alpha Community</li>
+            <li class="text-secondary">Playstation Blog</li>
+            <li class="text-secondary">My Product Help</li>
+          </ul>
+        </article>
+        <article class="col-6 col-lg-2 text-start">
+          <ul>
+            <li>About Sony</li>
+            <li class="text-secondary">Corporate Information</li>
+            <li class="text-secondary">Press Center</li>
+            <li class="text-secondary">Sony and the Environment</li>
+            <li class="text-secondary">Terms & Conditions</li>
+          </ul>
+        </article>
+        <article class="col-12 col-lg-2 text-start">
+          <ul>
+            <li class="mb-2">Payment Methods</li>
+            <li
+              class="px-3 py-2 mb-2 bg-grey-100 fw-bolder d-inline-block cursor-pointer"
+            >
+              Visa
+            </li>
+            <li
+              class="px-3 py-2 mb-2 bg-grey-100 fw-bolder d-inline-block cursor-pointer"
+            >
+              PayPal
+            </li>
+            <li
+              class="px-3 py-2 mb-2 bg-grey-100 fw-bolder d-inline-block cursor-pointer"
+            >
+              MasterCard
+            </li>
+          </ul>
+        </article>
+      </section>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
